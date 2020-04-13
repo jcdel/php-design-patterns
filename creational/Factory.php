@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @author Jessiedel Arnado
- * @description Basic Implemenation of Factory Design Pattern.
- */
-
 class HouseOptions
 {
     var $color = "White";
@@ -33,9 +28,8 @@ class House
 
 }
 
-// Test
-$options = new HouseOptions();
-$house = new House($options);
+// Testing
+$house = new House(new HouseOptions());
 echo $house->details();
 //Output: This house has 2 doors, 5 windows and White color.
 
@@ -67,7 +61,7 @@ class HouseFactory
 
 }
 
-// Factory Pattern Test
+// Factory Pattern Testing
 $factory = new HouseFactory("Black", 3, 10);
 $house = $factory->build();
 
