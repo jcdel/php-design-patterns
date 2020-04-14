@@ -28,7 +28,7 @@ class House
 
 }
 
-// Testing
+// Usage
 $house = new House(new HouseOptions());
 echo $house->details();
 //Output: This house has 2 doors, 5 windows and White color.
@@ -61,7 +61,7 @@ class HouseFactory
 
 }
 
-// Factory Pattern Testing
+// Usage
 $factory = new HouseFactory("Black", 3, 10);
 $house = $factory->build();
 
