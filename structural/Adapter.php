@@ -1,32 +1,39 @@
 <?php
 
-class Book {
+class Book
+{
     private $author;
     private $title;
 
-    function __construct($author, $title) {
+    function __construct($author, $title)
+    {
         $this->author = $author;
         $this->title  = $title;
     }
 
-    function getAuthor() {
+    function getAuthor()
+    {
         return $this->author;
     }
 
-    function getTitle() {
+    function getTitle()
+    {
         return $this->title;
     }
 }
 
-class BookAdapter {
+class BookAdapter
+{
 
     private $book;
 
-    function __construct(Book $book) {
+    function __construct(Book $book)
+    {
         $this->book = $book;
     }
 
-    function getAuthorAndTitle() {
+    function getAuthorAndTitle()
+    {
         return $this->book->getTitle().' by '.$this->book->getAuthor();
     }
 }

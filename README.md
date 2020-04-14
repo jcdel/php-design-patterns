@@ -9,3 +9,7 @@
 #### Structural Patterns:
 1. [Adapter](https://github.com/jcdel/php-design-patterns/tree/master/structural/Adapter.php)
 
+
+#### Behavioral Patterns:
+1. [Strategy](https://github.com/jcdel/php-design-patterns/tree/master/behavioral/Strategy.php)
+

@@ -33,13 +33,6 @@ $house = new House(new HouseOptions());
 echo $house->details();
 //Output: This house has 2 doors, 5 windows and White color.
 
-
-/**
- * HouseFactory that create House object
- * We can create House object directly using House class
- * But, by using this factory, we can skip the detail
- */
-
 class HouseFactory
 {
     private $options;
